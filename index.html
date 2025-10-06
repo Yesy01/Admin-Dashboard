@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -41,37 +40,60 @@
                 <a class="nav-item"><span class="icon"><img src="icons/face-agent.svg"
                             alt="support"></span><span>Support</span></a>
                 <a class="nav-item"><span class="icon"><img src="icons/shield-check-outline.svg"
-                            alt="support"></span><span>Privacy</span></a>
+                            alt="privacy"></span><span>Privacy</span></a>
             </div>
         </aside>
+
         <!-- The main content right side -->
         <div class="main-column">
             <header class="top-bar">
-                <div class="search">
-                    <span class="icon"><img src="icons/magnify.svg" alt="search"></span>
-                    <input type="search" placeholder="Search projects, members..." />
-                </div>
-                <div class="top-actions">
-                    <button class="btn ghost">New</button>
-                    <button class="btn ghost">Upload</button>
-                    <button class="btn primary">Share</button>
-                    <span class="icon"><img src="icons/bell-ring-outline.svg" alt="Alerts"></span>
-                    <span class="avatar-top-right"><img src="images/woman hijab.png" alt="User avatar"></span>
-                    <div class="user">
-                        <img class="avatar" src="images/woman hijab.png" alt="User avatar">
-                        <div class="username">Morgan Oakley</div>
+                <div class="search-line">
+
+                    <div class="search">
+                        <span><img class="icon" src="icons/magnify.svg" alt="search"></span>
+                        <input type="search" placeholder="Search projects, members..." />
                     </div>
+
+                    <div class="user-actions">
+                        <span class="icon"><img src="icons/bell-ring-outline.svg" alt="Alerts"></span>
+                        <img class="avatar" src="images/woman hijab.png" alt="User avatar">
+                        <div class="username-top-right">
+                            <p>Morgan Oakley</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="top-actions">
+
+                    <div class="user">
+                        <div><img class="avatar" src="images/woman hijab.png" alt="User avatar"></div>
+                        <div class="username">
+                            <p class="hi">Hi there,</p>
+                            <P>Morgan Oakley(@morgan)</P>
+                        </div>
+                    </div>
+                    <div class="dummy-buttons">
+                        <div><button class="btn">New</button></div>
+                        <div><button class="btn">Upload</button></div>
+                        <div><button class="btn">Share</button></div>
+                    </div>
+
                 </div>
             </header>
 
             <main class="content" role="main">
-                <h3 class="section-title">Your projects</h3>
+                   <div class="yourProject"><h3 class="section-title">Your projects</h3></div> 
+                   <div class="announcements"><h3>Announcements</h3></div>
+
 
                 <section class="projects">
+
                     <article class="card project-card">
                         <div class="card-accent"></div>
                         <div class="card-body">
-                            <h4 class="card-title">Super Coool projects </h4>
+                            <h4 class="card-title">Super Coool projects</h4>
                             <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat,
                                 id facilisis felis accumsan nec.</p>
                             <div class="card-actions">
@@ -87,25 +109,7 @@
                     <article class="card project-card">
                         <div class="card-accent"></div>
                         <div class="card-body">
-                            <h4 class="card-title">Less Coool projects </h4>
-                            <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat,
-                                id facilisis felis accumsan nec.</p>
-                            <div class="card-actions">
-                                <button class="icon-btn"><img src="icons/star-plus-outline.svg"
-                                        alt="Star project"></button>
-                                <button class="icon-btn"><img src="icons/eye-plus-outline.svg"
-                                        alt="Private/Public"></button>
-                                <button class="icon-btn"><img src="icons/source-fork.svg" alt="Fork Project"></button>
-                            </div>
-                        </div>
-                    </article>
-
-
-
-                    <article class="card project-card">
-                        <div class="card-accent"></div>
-                        <div class="card-body">
-                            <h4 class="card-title">Impossible App </h4>
+                            <h4 class="card-title">Less Coool projects</h4>
                             <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat,
                                 id facilisis felis accumsan nec.</p>
                             <div class="card-actions">
@@ -121,7 +125,7 @@
                     <article class="card project-card">
                         <div class="card-accent"></div>
                         <div class="card-body">
-                            <h4 class="card-title">Easy Peasy App </h4>
+                            <h4 class="card-title">Impossible App</h4>
                             <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat,
                                 id facilisis felis accumsan nec.</p>
                             <div class="card-actions">
@@ -134,74 +138,90 @@
                         </div>
                     </article>
 
+                    <article class="card project-card">
+                        <div class="card-accent"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Easy Peasy App</h4>
+                            <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat,
+                                id facilisis felis accumsan nec.</p>
+                            <div class="card-actions">
+                                <button class="icon-btn"><img src="icons/star-plus-outline.svg"
+                                        alt="Star project"></button>
+                                <button class="icon-btn"><img src="icons/eye-plus-outline.svg"
+                                        alt="Private/Public"></button>
+                                <button class="icon-btn"><img src="icons/source-fork.svg" alt="Fork Project"></button>
+                            </div>
+                        </div>
+                    </article>
 
                     <article class="card project-card">
                         <div class="card-accent"></div>
                         <div class="card-body">
-                            <h4 class="card-title">Ad Blocker </h4>
+                            <h4 class="card-title">Ad Blocker</h4>
                             <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat,
                                 id facilisis felis accumsan nec.</p>
-                            <div class="card-actions"></div>
-                            <button class="icon-btn"><img src="icons/star-plus-outline.svg" alt="Star project"></button>
-                            <button class="icon-btn"><img src="icons/eye-plus-outline.svg"
-                                    alt="Private/Public"></button>
-                            <button class="icon-btn"><img src="icons/source-fork.svg" alt="Fork Project"></button>
+                            <div class="card-actions">
+                                <button class="icon-btn"><img src="icons/star-plus-outline.svg"
+                                        alt="Star project"></button>
+                                <button class="icon-btn"><img src="icons/eye-plus-outline.svg"
+                                        alt="Private/Public"></button>
+                                <button class="icon-btn"><img src="icons/source-fork.svg" alt="Fork Project"></button>
+                            </div>
                         </div>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="card-accent"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Money Maker</h4>
+                            <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat,
+                                id facilisis felis accumsan nec.</p>
+                            <div class="card-actions">
+                                <button class="icon-btn"><img src="icons/star-plus-outline.svg"
+                                        alt="Star project"></button>
+                                <button class="icon-btn"><img src="icons/eye-plus-outline.svg"
+                                        alt="Private/Public"></button>
+                                <button class="icon-btn"><img src="icons/source-fork.svg" alt="Fork Project"></button>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <aside class="right-column">
+                    <div class="card announcements">
+                        <ul class="ann-list">
+                            <li><strong>Site Maintenance</strong>
+                                <p>Vestibulum condimentum tellus lacus...</p>
+                            </li>
+                            <li><strong>Community Share Day</strong>
+                                <p>Nam vel lectus tincidunt...</p>
+                            </li>
+                            <li><strong>Updated Privacy Policy</strong>
+                                <p>Phasellus efficitur nisi eget...</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card trending">
+                        <h4>Trending</h4>
+                        <ul class="trend-list">
+                            <li><img src="images/woman African.png" alt="user avatar">
+                                <div><strong>@tegan</strong><span>World Peace Builder</span></div>
+                            </li>
+                            <li><img src="images/woman hijab.png" alt="user avatar">
+                                <div><strong>@morgan</strong><span>Super Cool Project</span></div>
+                            </li>
+                            <li><img src="images/man.png" alt="user avatar">
+                                <div><strong>@kendall</strong><span>Life Changing App</span></div>
+                            </li>
+                            <li><img src="images/woman pink hair.png" alt="user avatar">
+                                <div><strong>@alex</strong><span>No Traffic Maker</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </main>
         </div>
-        </article>
-
-
-        <article class="card project-card">
-            <div class="card-accent"></div>
-            <div class="card-body">
-                <h4 class="card-title">Money Maker</h4>
-                <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat,
-                    id facilisis felis accumsan nec.</p>
-                <div class="card-actions">
-                    <button class="icon-btn"><img src="icons/star-plus-outline.svg" alt="Star project"></button>
-                    <button class="icon-btn"><img src="icons/eye-plus-outline.svg" alt="Private/Public"></button>
-                    <button class="icon-btn"><img src="icons/source-fork.svg" alt="Fork Project"></button>
-                </div>
-            </div>
-        </article>
-        </section>
-
-        <aside class="right-column">
-            <div class="card announcements">
-                <h4>Announcements</h4>
-                <ul class="ann-list">
-                    <li><strong>Site Maintenance</strong>
-                        <p>Vestibulum condimentum tellus lacus...</p>
-                    </li>
-                    <li><strong>Community Share Day</strong>
-                        <p>Nam vel lectus tincidunt...</p>
-                    </li>
-                    <li><strong>Updated Privacy Policy</strong>
-                        <p>Phasellus efficitur nisi eget...</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="card trending">
-                <h4> Trending</h4>
-                <ul class="trend-list">
-                    <li><img src="images/woman African.png" alt="user avatar">
-                        <div><strong>@tegan</strong><span>World Peace Builder</span></div>
-                    </li>
-                    <li><img src="images/woman hijab.png" alt="user avatar">
-                        <div><strong>@morgan</strong><span>Super Cool Project</span></div>
-                    </li>
-                    <li><img src="images/man.png" alt="user avatar">
-                        <div><strong>@kendall</strong><span>Life Changing App</span></div>
-                    </li>
-                    <li><img src="images/woman pink hair.png" alt="user avatar">
-                        <div><strong>@alex</strong><span>No Traffic Maker</span></div>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-        </main>
-    </div>
     </div>
 
     <script src="script.js"></script>
