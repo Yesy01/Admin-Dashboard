@@ -92,11 +92,13 @@ body {
     width: 32px;
     text-align: center;
     opacity: 0.98
+
 }
 
 .nav-item.active,
 .nav-item:hover {
     background: rgba(255, 255, 255, 0.08);
+    color: #fff;
 }
 
 .sidebar-bottom {
@@ -159,6 +161,7 @@ body {
     display: block;
     opacity: 0.85;
     flex: 0 0 auto;
+    color: white;
 }
 
 .top-bar .search input[type="search"] {
@@ -333,7 +336,12 @@ body {
     cursor: pointer;
     font-size: 18px;
     padding: 6px;
-    border-radius: 6px
+    border-radius: 6px;
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    opacity: 0.98
+
 }
 
 .icon-btn:hover {
